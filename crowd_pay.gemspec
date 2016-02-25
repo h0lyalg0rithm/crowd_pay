@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.description = 'CrowdPay.com API wrapper for Ruby'
   gem.authors     = ['Kelton Manzanares', 'Prakash Lingaiah', 'Krishnaprasad Varma']
   gem.email       = ['kelton.manzanares@gmail.com', 'plingaiah@qwinix.io', 'kvarma@qwinix.io']
-  gem.files       = ['lib/crowd_pay.rb']
+  gem.files         = `git ls-files -z`.split("\x0")
   gem.homepage    = 'https://github.com/qwinix/crowd_pay'
   gem.license     = 'MIT'
 end
