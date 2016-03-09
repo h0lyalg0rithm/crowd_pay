@@ -4,7 +4,11 @@ module CrowdPay
     include ActiveModel::Validations
     include CrowdPay
 
-    attr_accessor :id, :investor_key, :tax_id_number, :first_name, :middle_name, :last_name, :name, :birth_date, :mailing_address_1, :mailing_address_2, :mailing_city, :mailing_state, :mailing_zip, :mailing_country, :is_mailing_address_foreign, :legal_address_1, :legal_address_2, :legal_city, :legal_state, :legal_zip, :legal_country, :is_legal_address_foreign, :primary_phone, :secondary_phone, :is_person, :email, :is_cip_satisfied, :portal_investor_number, :created_by_ip_address
+    attr_accessor :id, :investor_key, :tax_id_number, :first_name, :middle_name, :last_name, :name, 
+                  :birth_date, :mailing_address_1, :mailing_address_2, :mailing_city, :mailing_state,
+                  :mailing_zip, :mailing_country, :is_mailing_address_foreign, :legal_address_1, :legal_address_2,
+                  :legal_city, :legal_state, :legal_zip, :legal_country, :is_legal_address_foreign, :primary_phone,
+                  :secondary_phone, :is_person, :email, :is_cip_satisfied, :portal_investor_number, :created_by_ip_address
 
     validates_presence_of :tax_id_number
     validates_presence_of :is_mailing_address_foreign

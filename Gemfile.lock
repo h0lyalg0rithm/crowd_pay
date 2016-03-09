@@ -54,7 +54,10 @@ PLATFORMS
 
 DEPENDENCIES
   crowd_pay!
-  factory_girl
-  rake
-  rspec
-  webmock
+  factory_girl (~> 4.2.0)
+  rake (~> 10.4.2)
+  rspec (~> 2.14.1)
+  webmock (~> 1.24.2)
+
+BUNDLED WITH
+   1.11.2

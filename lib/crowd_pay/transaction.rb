@@ -4,7 +4,8 @@ module CrowdPay
     include ActiveModel::Validations
     include CrowdPay
 
-    attr_accessor :id, :account_id, :asset_id, :date, :reference, :description, :amount, :status, :effective_date, :maturity_date, :cusip_number, :created_by_ip_address
+    attr_accessor :id, :account_id, :asset_id, :date, :reference, :description, :amount, :status,
+                  :effective_date, :maturity_date, :cusip_number, :created_by_ip_address
 
     validates_presence_of :account_id
     validates_presence_of :amount
